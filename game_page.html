@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Maths Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+
+<body class="body">
+    <center>
+        <div class="d-flex text-center justify-content-center libre-franklin">
+            <h4 id="name1"></h4>&nbsp;<h4>:</h4>&nbsp;<h4 id="score1"></h4>
+        </div>
+        <div class="d-flex text-center justify-content-center libre-franklin">
+            <h4 id="name2"></h4>&nbsp;<h4>:</h4>&nbsp;<h4 id="score2"></h4>
+        </div>
+        <div class="d-flex text-center justify-content-center libre-franklin">
+            <h4>Question Turn</h4>&nbsp;<h4>:</h4>&nbsp;<h4 id="questionturn">name</h4>
+        </div>
+        <div class="d-flex text-center justify-content-center libre-franklin">
+            <h4>Answer Turn</h4>&nbsp;<h4>:</h4>&nbsp;<h4 id="answerturn">name</h4>
+        </div>
+        <div class="container">
+            <center>
+                <h1 class="libre-franklin begin">The Math Quiz Game</h2>
+
+                    <div id="game-area">
+                        <br>
+                        <div id="question-area">
+                        </div>
+                    </div>
+                    <br>
+
+                    <input placeholder="Enter Number 1" id="number1" class="form-control libre-franklin" type="number">
+                    
+                    <label for="operator" class="libre-franklin">Choose Operator :</label>
+
+                    <select name="operator" id="operator" class="form-control">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="/">÷</option>
+                        <option value="*">×</option>
+                    </select>
+
+                    <br>
+
+                    <input placeholder="Enter Number 2" id="number2" class="form-control libre-franklin" type="number">
+
+                    <br>
+
+                    <button class="btn btn-success libre-franklin" onclick="send()">Send</button>
+            </center>
+        </div>
+    </center>
+</body>
+
+<script src="game_page.js"></script>
+
+</html>
